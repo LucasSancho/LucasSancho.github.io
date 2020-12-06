@@ -1,9 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quimica</title>
+        <link rel="stylesheet" type="text/css" href="./src/css/csshtml.css" media="screen" />
+        <script src="/js/quimica.js" defer></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <link rel="icon" href="./src/images/atom-line.svg">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>   
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
     <body>
-        <h1>Quimica</h1>
+        <h1><span class="iconify" data-icon="noto:letter-q" data-inline="false"></span>uimica <span class="iconify" data-icon="medical-icon:i-laboratory" data-inline="false"></span></h1>
+        <h2>Simulação 1</h2>
+        
+        
+        <div class="axDropdown">
+            <p><span class="iconify" data-icon="entypo:lab-flask" data-inline="false"></span>Selecione o elemento quimico</p>
+            <p id="elementoEscolhido">Nenhum elemento foi escolhido</p>
+            
+            <div class="dropdown"></div>
+        </div>
+        <br />
+        
+        <div class="box">
+
+            <label for="mol" id="labelmol">Digite o valor em mol</label>
+            <label for="grama" id="labelgrama">Digite o valor em grama</label>
+            <br />
+            <input type="text" id="mol" oninput="MOL()">
+            
+            <input type="text" id="grama" oninput="GRAMA()">
+        </div>
+        
+        <footer id="footer">
+            <p class="final">Gostariamos de informar que o banco de dados utilizado para calculos foi disponibilizado pelo projeto Periodic-Table-JSON através deste link <a href="https://github.com/Bowserinator/Periodic-Table-JSON">https://github.com/Bowserinator/Periodic-Table-JSON</a></p>
+        </footer>
     </body>
 </html>
