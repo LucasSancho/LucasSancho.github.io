@@ -5080,6 +5080,8 @@ let tabela =
 
 let massaElemento = "";
 
+//Simulação 1
+
 function SELECIONAR(evento)
 {
     massaElemento = tabela[evento.target.innerHTML].atomic_mass;
@@ -5106,7 +5108,7 @@ function MOL()
     let mol = document.getElementById("mol");
     let grama = document.getElementById("grama");
 
-    grama.value = mol.value * massaElemento;
+    grama.value = MOLG(mol.value, 1);
 }
 
 
@@ -5115,7 +5117,145 @@ function GRAMA()
     let mol = document.getElementById("mol");
     let grama = document.getElementById("grama");
     
-    mol.value = grama.value / massaElemento;
+    mol.value = GRAMAM(grama.value, 1);
+}
+
+//Simulação 2
+
+function S211()
+{
+    let H2 = document.getElementById("S211");
+    let O2 = document.getElementById("S212");
+    let H2O = document.getElementById("S213");
+
+    O2.value = MV(H2.value / 2, tabela.oxygen.density);
+    H2O.value = H2.value;
+
+}
+
+function S213()
+{
+    let H2 = document.getElementById("S211");
+    let O2 = document.getElementById("S212");
+    let H2O = document.getElementById("S213");
+
+    O2.value = MV(H2O.value / 2, tabela.oxygen.density);
+    H2.value = H2O.value;
+}
+
+function S212()
+{
+    let H2 = document.getElementById("S211");
+    let O2 = document.getElementById("S212");
+    let H2O = document.getElementById("S213");
+
+    H2.value = VM(O2.value, tabela.oxygen.density) * 2;
+    H2O.value = H2.value;
+}
+
+//Simulação 3
+
+let s31 = 0;
+let s32 = 0;
+
+function S3()
+{
+    let H2 = document.getElementById("S31");
+    let O2 = document.getElementById("S32");
+    let H2O = document.getElementById("S33");
+
+    let R1 = document.getElementById("R1");
+    let R2 = document.getElementById("R2");
+    let R3 = document.getElementById("R3");
+
+    ah2 = GRAMAM(H2.value, 2);
+    ao2 = VM(O2.value, tabela.oxygen.density);
+
+
+    if (ao2 > ah2 / 2)
+    {
+        H2O.value = ah2;
+        R1.innerHTML = "H2";
+        R2.innerHTML = ah2;
+        R3.innerHTML = ah2;
+    }
+
+    else
+    {
+        H2O.value = ao2 * 2;
+        R1.innerHTML = "O2";
+        R2.innerHTML = ao2;
+        R3.innerHTML = ao2 * 2;
+    }
+}
+
+function S3TESTE()
+{
+    if (s31 == 1 && s32 == 1)
+        S3();
+}
+
+function S31()
+{
+    let H2 = document.getElementById("S31");
+    if (H2.value >= 0)
+    {
+        s31 = 1;
+        S3TESTE();
+    }  
+}
+
+function S32()
+{
+    let O2 = document.getElementById("S32");
+    if (O2.value >= 0)
+    {
+        s32 = 1;
+        S3TESTE();
+    }
+}
+
+function S33()
+{
+    S3TESTE();
+}
+
+//FAZ-TUDO
+
+function GRAMAM(valor,  elemento)
+{
+    switch(elemento)
+    {
+        case 1: return valor / massaElemento;
+                break;
+        case 2: return valor / tabela.hydrogen.atomic_mass;
+                break;
+        case 3: return valor / tabela.oxygen.atomic_mass;
+            
+    }
+}
+
+function MOLG(valor, elemento)
+{
+    switch(elemento)
+    {
+        case 1: return valor * massaElemento;
+                break;
+        case 2: return valor * tabela.hydrogen.atomic_mass;
+                break;
+        case 3: return valor * tabela.oxygen.atomic_mass;
+                break;
+    }
+}
+
+function MV(valor, densidade)
+{
+    return valor * densidade;
+}
+
+function VM(valor, densidade)
+{
+    return valor * densidade;
 }
 
 tabela.order.forEach(DROPDOWN)
