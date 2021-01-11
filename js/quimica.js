@@ -5128,8 +5128,11 @@ function S211()
     let O2 = document.getElementById("S212");
     let H2O = document.getElementById("S213");
 
-    O2.value = MV(H2.value / 2, tabela.oxygen.density);
-    H2O.value = H2.value;
+    var h2 = +H2.value;
+    var o2 = GRAMAM(h2, 2) / 2;
+
+    H2O.value = (MOLG(o2, 3) + h2);
+    O2.value = MV(o2, tabela.oxygen.density);
 
 }
 
@@ -5139,8 +5142,12 @@ function S213()
     let O2 = document.getElementById("S212");
     let H2O = document.getElementById("S213");
 
-    O2.value = MV(H2O.value / 2, tabela.oxygen.density);
-    H2.value = H2O.value;
+    var h2o = +H2O.value;
+    var h2 = h2o / (18.015 / 2.016);
+    var o2 = GRAMAM(h2, 2)/ 2;
+
+    O2.value = MV(o2, tabela.oxygen.density);
+ 
 }
 
 function S212()
@@ -5149,8 +5156,14 @@ function S212()
     let O2 = document.getElementById("S212");
     let H2O = document.getElementById("S213");
 
-    H2.value = VM(O2.value, tabela.oxygen.density) * 2;
-    H2O.value = H2.value;
+    var o2 = +O2.value;
+    o2 = VM(o2, tabela.oxygen.density);
+    var h2 = o2 * 2;
+    h2 = MOLG(h2, 2);
+    var h2o = MOLG(o2, 3) + h2;
+
+    H2.value = h2;
+    H2O.value = h2o;
 }
 
 //Simulação 3
@@ -5168,8 +5181,11 @@ function S3()
     let R2 = document.getElementById("R2");
     let R3 = document.getElementById("R3");
 
-    ah2 = GRAMAM(H2.value, 2);
-    ao2 = VM(O2.value, tabela.oxygen.density);
+    ah2 = GRAMAM(+H2.value, 2);
+    console.log(ah2);
+    console.log(+O2.value);
+    ao2 = VM(+O2.value, tabela.oxygen.density);
+    console.log(ao2);
 
 
     if (ao2 > ah2 / 2)
@@ -5180,12 +5196,20 @@ function S3()
         R3.innerHTML = ah2;
     }
 
-    else
+    if(ao2 < ah2 / 2)
     {
         H2O.value = ao2 * 2;
         R1.innerHTML = "O2";
         R2.innerHTML = ao2;
         R3.innerHTML = ao2 * 2;
+    }
+
+    if(ao2 == ah2 / 2)
+    {
+        H2O.value = ah2;
+        R1.innerHTML = "H2 e O2 (são proporcionais)";
+        R2.innerHTML = ah2;
+        R3.innerHTML = ah2;
     }
 }
 
@@ -5198,7 +5222,7 @@ function S3TESTE()
 function S31()
 {
     let H2 = document.getElementById("S31");
-    if (H2.value >= 0)
+    if (+H2.value >= 0)
     {
         s31 = 1;
         S3TESTE();
@@ -5208,7 +5232,7 @@ function S31()
 function S32()
 {
     let O2 = document.getElementById("S32");
-    if (O2.value >= 0)
+    if (+O2.value >= 0)
     {
         s32 = 1;
         S3TESTE();
@@ -5255,7 +5279,7 @@ function MV(valor, densidade)
 
 function VM(valor, densidade)
 {
-    return valor * densidade;
+    return valor / densidade;
 }
 
 tabela.order.forEach(DROPDOWN)
