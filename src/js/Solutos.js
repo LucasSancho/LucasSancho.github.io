@@ -1,3 +1,12 @@
+
+function VerificarNulo(n1,n2)
+{
+    if (isNaN(n1) || isNaN(n2))
+        return 0
+    
+    return 1
+}
+
 function Classificacao()
 {
     let h3 = document.getElementById("Tsolucao")
@@ -9,6 +18,15 @@ function Classificacao()
     Kio3 = parseFloat(Kio3.value)
     agua = parseFloat(agua.value)
 
+    console.log(Kio3)
+    console.log(agua)
+
+    if(!VerificarNulo(Kio3, agua))
+    {
+        h3.innerText = "Por favor, coloque um numero válido"
+        return
+    }
+        
     let ax = (agua/100) * 18
 
     let porcentagem = (Kio3/ax) * 100
@@ -41,7 +59,6 @@ function Classificacao()
     }
 
     p.innerText += " Neste caso a porcentagem foi de aproximadamente:" + parseInt(porcentagem) + "%."
-
 }
 
 function Molaridade()
@@ -52,9 +69,16 @@ function Molaridade()
     let agua = parseFloat(document.getElementById("MH2O").value)
 
     let p = document.getElementById("PMol")
+    let h3 = document.getElementById("TMol")
+
+    if(!VerificarNulo(Kio3, agua))
+    {
+        h3.innerText = "Por favor, coloque um numero válido"
+        return
+    }
     
     let calculo = Kio3 / (agua * MassaMolar)
 
-
+    h3.innerText = "Resultado:"
     p.innerText = "A quantidade de molaridade deste cálculo é de " + calculo + " mol/L."
 }
