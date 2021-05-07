@@ -36,7 +36,7 @@ function Classificacao()
     else
     {
         h3.innerText = "Supersaturada(com corpo de fundo)"
-        p.innerText = "Solução supersaturada é aquela que apresenta uma quantidade de soluto dissolvida superior à especificada no coeficiente de solubilidade."
+        p.innerText = "Solução supersaturada é aquela que apresenta uma quantidade de soluto dissolvida superior à especificada no coeficiente de solubilidade, fazendo com que haja uma quantidade não diluida no fundo."
         console.log("supersaturado")
     }
 
