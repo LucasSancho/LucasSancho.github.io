@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Solutos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js/solutos.js"></script>
+    <title>Solutos</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            Solutos
+            <span class="material-icons science">science</span></header>
+        </div>
+    </header>
+    <div class="frasquin">
+        <div class="top glass"></div>
+        <div class="mid glass"></div>
+        <div class="bot glass"></div>
+        <div class="liquid"></div>
+    </div>
+    <div class="container">
+        <div class="cont">
+            <h2 class="tema">Infomações Gerais</h2>
+            <h3>Classificação das soluções</h3>
+            <ul class="list">
+                <li>Solução Sólida</li>
+                <li>Solução Líquida</li>
+                <li>Solução Gasosa</li>
+            </ul>
+            <br>
+            <div class="soluto icon">
+                <h2>Soluto e Solvente Escolhido: KIO3 e H20</h2> 
+                <span class="material-icons water">water_drop</span>
+            </div>
+            <br>
+            <h2>Classificação de soluções quanto à quantidade de soluto</h2>
+            <p>Para realizar esta simulação estaremos considerando que a temperatura é de 60 ºC e 18 gramas de KIO3 para cada 100 gramas de H2O</p>
+            <br>
+            <input type="number" name="" id="CKIO3" placeholder="KIO3 grama">
+            <input type="number" name="" id="CH2O" placeholder="H2O grama">
+            <button id="enviar" onclick="Classificacao()">Enviar</button>
+            <br>
+            <br>
+            <h3 id="Tsolucao"></h3><p id="Psolucao"></p>
+            <br>
+        </div>
+        <div class="gray">
+            <h2 class="tema">Reação entre soluto e solução</h2>
+            <h3>Concentração em massa</h3>
+            Concentração comum ou concentração em massa (C):
+            <br>
+            Relaciona a quantidade de massa do soluto presente em um determinado volume da solução. Sua unidade no SI é gramas por litro (g/L)
+            <br>
+            <br>
+            <h3>Densidade</h3>
+            Relaciona a quantidade de massa da solução (massa do solvente + massa do soluto) e o volume dessa solução. Sua unidade no SI é gramas por litro (g/mL)
+            <br>
+            <br>
+            <h3>Titulo em massa</h3>
+            Relaciona a massa do soluto e a massa da solução.
+            <br>
+            Não possui unidade ou fala-se em termos de porcentagem (%)
+            <br>
+            <br>
+            <h3>Densidade em uma mistura</h3>
+            A densidade de uma substância composta ou de uma mistura é a soma das densidades dos componentes desta mistura, calculada a partir das proporções (das concentrações), como por exemplo das porcentagens em massa de cada um dos componentes.
+            <br>
+            <br>
+            <h3>Título em volume</h3>
+            O título em volume é a relação entre o volume do soluto e o volume da solução.
+            <br>
+            Ele também pode ser expresso em porcentagem de volume, multiplicando o título por 100%.
+            <br>
+            <br>
+            <h3>Concentração em partes por milhão(PPM)</h3>
+            Partes por milhão (ppm) indica a quantidade, em gramas, de soluto presente em 1000000 gramas da solução.
+            <br>
+            É uma grandeza que serve para relacionar a massa do soluto com a de soluções que estão muito diluídas.
+            <br>
+            <br>
+            <h3>Molaridade</h3>
+            <input type="number" name="" id="MKIO3" placeholder="KIO3 grama">
+            <input type="number" name="" id="MH2O" placeholder="H2O litros">
+            <button id="enviar" onclick="Molaridade()">Enviar</button>
+            <br>
+            <br>
+            <h3 id="TMol">Resultado:</h3><p id="PMol"></p>
+            <br>
+            <br>
+            <p> Ao se misturar soluções com solutos diferentes, pode-se dar origem a uma mistura de soluções com reação química. Assim, torna-se imprescindível saber a estequiometria da reação.
+                <br>
+                <br>
+                Para que em uma mistura de soluções ocorra uma reação química, os seus solutos não devem ser os mesmos, pois a reação ocorre entre eles.
+                <br>
+                <br>
+                Em laboratórios e indústrias químicas, a maioria das misturas se dá a partir da ocorrência de reações e, por isso, torna-se imprescindível conhecer a estequiometria dessas reações. Isso significa saber equacionar as reações e conhecer a proporção em número de mol dos reagentes e dos produtos, que é dada pelos coeficientes da equação balanceada.
+                <br>
+                <br>
+                Se soubermos esses detalhes, poderemos determinar se a solução final é neutra, ácida ou básica, além de ser possível determinar a concentração em mol/L do produto.</p>
+        </div>
+
+        <div class="cont">
+        <h2 class="tema">Diluição e concentração de solutos</h2>
+        <p>A diluição consiste em adicionar solvente a uma solução, sem modificar a quantidade de soluto.
+               <br>
+               <br>
+               Em uma diluição, a quantidade de solvente e o volume da solução aumentam, enquanto a quantidade de soluto permanece igual.
+               <br>
+               <br>
+               Como resultado, a concentração da solução diminui.
+        </p>
+    </div>
+        
+            <div class="gray">
+                <h2 class="tema">Mistura de solução</h2>
+                <p>
+                    Quando dois solutos diferentes entram em contato, existe a possibilidade de haver ou não uma reação química. Para saber se haverá ou não reação, basta conhecer os solutos de cada solução que está sendo misturada.
+                </p> 
+                <h3>Não reagem entre si</h3>
+                <p>
+                    Se eles apresentarem o mesmo cátion ou o mesmo ânion, não haverá reação química.
+                </p>
+                <br>
+                <h3>Reagem entre si</h3>
+                <p>
+                    Se eles apresentarem o cátion e o ânion diferentes, haverá reação química.
+                </p>
+                <br>
+                <h3>Mesmo soluto</h3>
+                <p>
+                    A mistura de soluções de mesmo soluto é caracterizada pelo aumento da quantidade de solvente e soma da quantidade de soluto das soluções misturadas após o procedimento.
+                </p>
+                <br>
+            </div>
+            <div class="cont">
+                <h2 class="tema">Titulação de soluções</h2>
+                <p>
+                    A titulação é um procedimento laboratorial utilizado para determinar a concentração em quantidade de matéria (ou concentração em mol/L) de uma solução que contém um ácido ou uma base. Durante a titulação, sempre ocorre uma mistura de soluções contendo solutos diferentes com ocorrência de reação química.
+                </p>
+            </div>
+        
+        
+        
+        
+        <!-- <h2>Preparação de Solutos</h2>
+        <h2>Relação entre soluto e solução</h2>
+        <h2>Densidade de uma mistura</h2>
+        <h2>Diluição e concentração</h2> -->
+        
+        
+    </div>
+</body>
+</html>
