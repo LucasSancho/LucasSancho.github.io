@@ -1,0 +1,692 @@
+:root
+{
+    --cor-principal: #027A00;
+    --cor-secundaria: #90DC34;
+    --cor-teciaria: #F5B82E;
+    --cor-branco: #F5F5F5;
+    --cor-preto: #403C3C;
+}
+
+p
+{
+    font-size: 5.5vw;
+}
+
+
+.header
+{
+    background-color: var(--cor-principal);
+    width: 100%;
+    height: 50px;
+    top: 0%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.espacamento
+{
+    height: 50px;
+}
+
+.conteudo-header
+{
+    width: 100%;
+}
+
+.anuncio
+{
+    position: relative;
+    display: flex;
+    width: 92%;
+    height: 102px;
+    height: 12vh;
+    left: 4%;
+
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor-principal);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.anuncio-imagem
+{
+    position: absolute;
+    left: 4.64%;
+    right: 65.8%;
+    top: 16.67%;
+    bottom: 16.67%;
+    
+    width: 29%;
+}
+
+.anuncio-imagem-fazendeiro
+{
+    position: absolute;
+    left: 2.32%;
+    right: 62.03%;
+    top: 10.7%;
+    bottom: 10.78%;
+    width: 35%;
+
+    border-radius: 4px;
+}
+
+.anuncio-imagem-tamanho
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 65px;
+    max-height: 70px;
+    width: 100%
+}
+
+.anuncio-imagem-tamanho-fazendeiro
+{
+    border-radius: 4px;
+    min-height: 80px;
+    max-height: 80px;
+    width: 100%
+}
+
+
+.anuncio-imagem-background
+{
+    position: absolute;
+    left: 2.32%;
+    right: 62.03%;
+    top: 10.34%;
+    bottom: 10.34%;
+    width: 35%;
+
+    background: var(--cor-branco);
+    border-radius: 5px;
+
+}
+
+.anuncio-titulo
+{
+    position: absolute;
+    left: 40.29%;
+    right: 0%;
+    top: -9%;
+    bottom: 67.54%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: var(--cor-branco);
+}
+
+.anuncio-empresa
+{
+    position: absolute;
+    left: 40.29%;
+    right: 0%;
+    top: 20%;
+    bottom: 50%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+
+    color: var(--cor-branco);
+}
+
+.anuncio-preco
+{
+    position: absolute;
+    left: 40.29%;
+    right: 0%;
+    top: 33%;
+    bottom: 0%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: var(--cor-teciaria);
+}
+
+.anuncio-local
+{
+    position: absolute;
+    left: 40.29%;
+    right: 0%;
+    top: 30%;
+    bottom: 3.92%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: var(--cor-branco);
+}
+
+.popup
+{
+    position: relative;
+    width: 92%;
+    height: 86px;
+    left: 4%;
+}
+
+.popup-fundo
+{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: -4px;
+    bottom: 0%;
+
+    background: var(--cor-secundaria);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.popup-quantidade
+{
+    position: absolute;
+    left: 9.57%;
+    right: 55.94%;
+    top: 12.79%;
+    bottom: 50%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+
+    color: var(--cor-preto);
+} 
+
+.popup-total
+{
+    position: absolute;
+    left: 71.88%;
+    right: 12.75%;
+    top: 12.79%;
+    bottom: 55.81%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: var(--cor-preto);
+}
+
+.popup-menos
+{
+    position: absolute;
+    left: 3.77%;
+    right: 86.96%;
+    top: 53.49%;
+    bottom: 9.3%;
+}
+
+.popup-input
+{
+    position: absolute;
+    left: 15.36%;
+    right: 61.74%;
+    top: 55.81%;
+    bottom: 10.47%;
+
+    background-color: var(--cor-branco);
+    border-radius: 20px;
+
+    border: none;
+    width: 22%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+
+    color: var(--cor-preto);
+}
+
+.popup-valor
+{
+    position: absolute;
+    left: 60%;
+    right: 16.23%;
+    top: 56.98%;
+    bottom: 13.95%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+
+    color: var(--cor-preto);
+}
+
+.popup-confirmar
+{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 5%;
+    top: 46px;
+}
+
+.popup p
+{
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+
+
+.popup-mais
+{
+    position: absolute;
+    left: 40.58%;
+    right: 50.14%;  
+    top: 53.49%;
+    bottom: 9.3%;
+}
+
+.imagem-detalhe
+{
+    position: relative;
+    width: 100%;
+    height: 273px;
+    left: 0px;
+    top: 50px;
+}
+
+.imagem-detalhe-fundo
+{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: var(--cor-principal);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.imagem-detalhe-imagem-fundo
+{
+    position: absolute;
+    left: 5.07%;
+    right: 5.07%;
+    top: 7.33%;
+    bottom: 7.33%;
+
+    background: var(--cor-branco);
+    border-radius: 4px;
+}
+
+
+.imagem-detalhe-imagem-tamanho
+{
+    position: absolute;
+    left: 5.07%;
+    right: 5.07%;
+    top: 7.5%;
+    bottom: 78.36%;
+
+    border-radius: 4px;
+    min-width: 89.8%;
+    max-width: 89.8%;
+    min-height: 234px;
+    max-height: 234px;
+}
+
+.descricao-detalhe p
+{
+    position: relative;
+    width: 80%;
+    left: 5%;
+    margin-top: 4em;
+
+    background: var(--cor-principal);
+    border-radius: 8px;
+
+    padding: 1em;
+
+    font-family: Roboto;
+    font-style: normal; 
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: justify;
+
+    color: var(--cor-branco);
+}
+
+.lista
+{
+    position: relative;
+    left: 5%;
+    width: 90%;
+
+
+    background: #90DC34;
+    border-radius: 15px;
+}
+
+.lista-conteudo
+{
+    padding: 10px;
+    padding-bottom: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: var(--cor-preto);
+}
+
+.lista-conteudo p
+{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.lista-icone
+{
+    position: absolute;
+    right: 5%;
+    margin-top: 7px;
+}
+
+.inicio-produtos
+{
+    position: relative;
+    top: 4em;
+    width: 90%;
+    height: 133px;
+    left: 5%;
+
+    background: var(--cor-principal);
+    border-radius: 8px;
+}
+
+.inicio-produtos-imagem-fundo
+{
+    position: absolute;
+    left: 3.55%;
+    top: 12%;
+    width: 100px;
+    height: 100px;
+
+
+    background: var(--cor-branco);
+    border-radius: 8px;
+}
+
+.inicio-produtos-imagem
+{
+    position: absolute;
+    left: 3.55%;
+    top: 12%;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 8px;
+}
+
+.inicio-produtos-titulo
+{
+    position: absolute;
+    width: 50%;
+    height: 86px;
+    left: 42%;
+    top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: var(--cor-branco);
+}
+
+.inicio-produtos-titulo p
+{
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+.inicio-produtores
+{
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 133px;
+
+    margin-top: 1em;
+
+    background: var(--cor-principal);
+    border-radius: 8px;
+}
+
+.inicio-produtores-fundo
+{
+    position: absolute;
+    width: 100%;
+    height: 53px;
+    left: 0px;
+    top: 85px;
+
+    background: #90DC34;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.inicio-produtores-titulo
+{
+    position: absolute;
+    left: 6.8%;
+    right: 7.4%;
+    top: 10%;
+    bottom: 39.85%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: var(--cor-branco);
+}
+
+.inicio-produtores-titulo p
+{
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+.inicio-produtores-resposta
+{
+    position: absolute;
+    width: 90%;
+    height: 39px;
+    left: 5%;
+    top: 97px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    text-align: center;
+
+    color: var(--cor-preto);
+}
+
+.inicio-produtores-resposta p
+{
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+.inicio-produtores-resposta-icone
+{
+    position: absolute;
+    right: 5%;
+    top: 72.18%;
+    bottom: 3.76%;
+}
+
+.inicio-projeto
+{
+    position: absolute;
+    width: 90%;
+    height: 323px;
+    left: 5%;
+    top: 492px;
+
+    background: var(--cor-principal);
+    border-radius: 8px;
+}
+
+.inicio-projeto-fundo
+{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 25.39%;
+    bottom: 0%;
+
+    background: var(--cor-secundaria);
+    border-radius: 0px 0px 8px 8px;
+}
+
+.inicio-projeto-titulo
+{
+    position: absolute;
+    left: 5.33%;
+    right: 7.1%;
+    top: 5.88%;
+    bottom: 72.76%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: var(--cor-branco);
+}
+
+.inicio-projeto-titulo p
+{
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+.inicio-projeto-descricao
+{
+    position: absolute;
+    left: 4.73%;
+    right: 7.1%;
+    top: 28.79%;
+    bottom: 6.19%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: var(--cor-preto);
+}
+
+.inicio-projeto-descricao p
+{
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+
+#pesquisa-lupa
+{
+    position: relative;
+    left: 68%;
+    padding-top: 3px;
+}
+
+#pesquisa-input
+{
+    position: absolute;
+    border: none;
+    border-radius: 50px;
+    width: 70%;
+    height: 28px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    left: 15%;
+
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#menu
+{
+    float: left;
+    padding-left: 3%;
+    padding-right: 1rem;
+    width: 0%;
+}
+
+
+#carrinho
+{
+    float: right;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+}
+
+body
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+}

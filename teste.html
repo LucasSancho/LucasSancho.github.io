@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <title>Covapp</title>
+</head>
+<body>
+    <div class="header">
+        <div class="conteudo-header">
+            <div id="menu">
+                <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29 5.6V0H0V5.6H29ZM29 16.8V11.2H0V16.8H29ZM29 28V22.4H0V28H29Z" fill="#F5F5F5"/>
+                </svg>
+            </div>
+        
+            <input id="pesquisa-input" type="text" placeholder="O que deseja?">
+            <svg id="pesquisa-lupa" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z" fill="black" fill-opacity="0.7"/>
+                    <path d="M11.238 8.548C11.617 8.928 11.826 9.43 11.826 9.962H13.826C13.8269 9.43643 13.7236 8.91589 13.5221 8.43049C13.3206 7.94508 13.0248 7.50442 12.652 7.134C11.138 5.622 8.513 5.622 7 7.134L8.412 8.55C9.172 7.792 10.482 7.794 11.238 8.548Z" fill="black" fill-opacity="0.7"/>
+                </svg>
+            
+
+            <div id="carrinho">
+                <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.4231 16.4784L30.9673 5.10338C31.151 4.28209 30.5367 3.5 29.7078 3.5H8.56849L8.07518 1.04945C7.95226 0.438648 7.42332 0 6.80972 0H1.29167C0.57829 0 0 0.587617 0 1.3125V2.1875C0 2.91238 0.57829 3.5 1.29167 3.5H5.05273L8.83344 22.2816C7.92895 22.8102 7.31945 23.8012 7.31945 24.9375C7.31945 26.6289 8.66881 28 10.3333 28C11.9979 28 13.3472 26.6289 13.3472 24.9375C13.3472 24.0803 13.0003 23.3059 12.4418 22.75H23.7249C23.1664 23.3059 22.8194 24.0803 22.8194 24.9375C22.8194 26.6289 24.1688 28 25.8333 28C27.4979 28 28.8472 26.6289 28.8472 24.9375C28.8472 23.725 28.1536 22.6772 27.1477 22.181L27.4446 20.8534C27.6283 20.0321 27.0139 19.25 26.185 19.25H11.7389L11.3867 17.5H27.1636C27.7667 17.5 28.2895 17.076 28.4231 16.4784Z" fill="#F5F5F5"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="espacamento"></div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem"><img class="anuncio-imagem-tamanho" src="./public/icon/banana.png"></div>
+        <div class="anuncio-titulo"><p>Banana nanica</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-preco"><p>R$: 1,99 Kg</p></div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-fundo"></div>
+        <div class="popup-quantidade"><p>Quantidade</p></div>
+        <div class="popup-total"><p>Total</p></div>
+        <div class="popup-menos">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.3334 16H10.6667" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 29.3333C23.3638 29.3333 29.3334 23.3638 29.3334 16C29.3334 8.6362 23.3638 2.66667 16 2.66667C8.63622 2.66667 2.66669 8.6362 2.66669 16C2.66669 23.3638 8.63622 29.3333 16 29.3333Z" stroke="#F5F5F5" stroke-width="2"/>
+            </svg>
+        </div>
+        <input class="popup-input" type="number" value="1.5">
+        <div class="popup-mais">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 10.6667V16M16 16V21.3333M16 16H21.3333M16 16H10.6667" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.6362 23.3638 2.66667 16 2.66667C8.63619 2.66667 2.66666 8.6362 2.66666 16C2.66666 23.3638 8.63619 29.3333 16 29.3333Z" stroke="#F5F5F5" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="popup-valor"><p>R$: 2,98</p></div>
+        <div class="popup-confirmar">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.6667 16.6667L14.6667 20.6667L21.3333 12.6667" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.6362 23.3638 2.66667 16 2.66667C8.63619 2.66667 2.66666 8.6362 2.66666 16C2.66666 23.3638 8.63619 29.3333 16 29.3333Z" stroke="#F5F5F5" stroke-width="2"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem"><img class="anuncio-imagem-tamanho" src="./public/icon/banana.png"></div>
+        <div class="anuncio-titulo"><p>Banana nanica</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-preco"><p>R$: 1,99 Kg</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem"><img class="anuncio-imagem-tamanho" src="./public/icon/banana.png"></div>
+        <div class="anuncio-titulo"><p>Banana nanica</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-preco"><p>R$: 1,99 Kg</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem"><img class="anuncio-imagem-tamanho" src="./public/icon/banana.png"></div>
+        <div class="anuncio-titulo"><p>Banana nanica</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-preco"><p>R$: 1,99 Kg</p></div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-fundo"></div>
+        <div class="popup-quantidade"><p>Quantidade</p></div>
+        <div class="popup-total"><p>Total</p></div>
+        <div class="popup-menos">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.3334 16H10.6667" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 29.3333C23.3638 29.3333 29.3334 23.3638 29.3334 16C29.3334 8.6362 23.3638 2.66667 16 2.66667C8.63622 2.66667 2.66669 8.6362 2.66669 16C2.66669 23.3638 8.63622 29.3333 16 29.3333Z" stroke="#F5F5F5" stroke-width="2"/>
+            </svg>
+        </div>
+        <input class="popup-input" type="number" value="1.5">
+        <div class="popup-mais">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 10.6667V16M16 16V21.3333M16 16H21.3333M16 16H10.6667" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.6362 23.3638 2.66667 16 2.66667C8.63619 2.66667 2.66666 8.6362 2.66666 16C2.66666 23.3638 8.63619 29.3333 16 29.3333Z" stroke="#F5F5F5" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="popup-valor"><p>R$: 2,98</p></div>
+        <div class="popup-confirmar">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.6667 16.6667L14.6667 20.6667L21.3333 12.6667" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.6362 23.3638 2.66667 16 2.66667C8.63619 2.66667 2.66666 8.6362 2.66666 16C2.66666 23.3638 8.63619 29.3333 16 29.3333Z" stroke="#F5F5F5" stroke-width="2"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem"><img class="anuncio-imagem-tamanho" src="./public/icon/banana.png"></div>
+        <div class="anuncio-titulo"><p>Banana nanica</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-preco"><p>R$: 1,99 Kg</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem"><img class="anuncio-imagem-tamanho" src="./public/icon/banana.png"></div>
+        <div class="anuncio-titulo"><p>Banana nanica</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-preco"><p>R$: 1,99 Kg</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem"><img class="anuncio-imagem-tamanho" src="./public/icon/banana.png"></div>
+        <div class="anuncio-titulo"><p>Banana nanica</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-preco"><p>R$: 1,99 Kg</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+    <div class="anuncio">
+        <div class="anuncio-imagem-background"></div>
+        <div class="anuncio-imagem-fazendeiro"><img class="anuncio-imagem-tamanho-fazendeiro" src="./public/icon/fazendeiro.png"></div>
+        <div class="anuncio-titulo"><p>Colheita Tropical</p></div>
+        <div class="anuncio-empresa"><p>Almeida</p></div>
+        <div class="anuncio-local"><p>Vargem Alta Nova Friburgo</p></div>
+    </div>
+
+</body>
+</html>
